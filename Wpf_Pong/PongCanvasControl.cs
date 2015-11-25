@@ -172,9 +172,7 @@ namespace Wpf_Pong
             // collision detection
             if (this.ballLeft <= (BallWidth + PaddleMargin))
             {
-                bool isLeftPaddleDefending = this.IsLeftPaddleDefending();
-
-                if (isLeftPaddleDefending)
+                if (this.IsLeftPaddleDefending())
                 {
                     if (dir == BallDirection.LeftTop)
                         dir = BallDirection.RightTop;
